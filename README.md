@@ -1,7 +1,7 @@
 IKAutoCompleteTextField
 =======================
 
-* Autocomplete text field for iOS based on https://github.com/nicolaschengdev/WYPopoverController inspired by https://github.com/ilyakalinin/SuggestiveTextField
+* Autocomplete text field for iOS based on https://github.com/nicolaschengdev/WYPopoverController inspired by https://github.com/tetek/SuggestiveTextField
 * Should work on iPhone as well as on iPad
 
 ```objective-c
