@@ -21,6 +21,9 @@
 		A9695C831990CA9100A9F64B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9695C651990CA9100A9F64B /* UIKit.framework */; };
 		A9695C8B1990CA9100A9F64B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9695C891990CA9100A9F64B /* InfoPlist.strings */; };
 		A9695C8D1990CA9100A9F64B /* UniversalPopoverDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9695C8C1990CA9100A9F64B /* UniversalPopoverDemoTests.m */; };
+		A9695CA01990CCB900A9F64B /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9695C9C1990CCB900A9F64B /* WYPopoverController.m */; };
+		A9695CA11990CCB900A9F64B /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = A9695C9E1990CCB900A9F64B /* WYStoryboardPopoverSegue.m */; };
+		A9695CA71990CD4F00A9F64B /* IKAutoCompleteTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A9695CA61990CD4F00A9F64B /* IKAutoCompleteTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		A9695C881990CA9100A9F64B /* UniversalPopoverDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UniversalPopoverDemoTests-Info.plist"; sourceTree = "<group>"; };
 		A9695C8A1990CA9100A9F64B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9695C8C1990CA9100A9F64B /* UniversalPopoverDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UniversalPopoverDemoTests.m; sourceTree = "<group>"; };
+		A9695C9B1990CCB900A9F64B /* WYPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPopoverController.h; sourceTree = "<group>"; };
+		A9695C9C1990CCB900A9F64B /* WYPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPopoverController.m; sourceTree = "<group>"; };
+		A9695C9D1990CCB900A9F64B /* WYStoryboardPopoverSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYStoryboardPopoverSegue.h; sourceTree = "<group>"; };
+		A9695C9E1990CCB900A9F64B /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
+		A9695CA51990CD4F00A9F64B /* IKAutoCompleteTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKAutoCompleteTextField.h; sourceTree = "<group>"; };
+		A9695CA61990CD4F00A9F64B /* IKAutoCompleteTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKAutoCompleteTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +121,7 @@
 		A9695C671990CA9100A9F64B /* UniversalPopoverDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A9695C961990CCB900A9F64B /* Utils */,
 				A9695C701990CA9100A9F64B /* UPDAppDelegate.h */,
 				A9695C711990CA9100A9F64B /* UPDAppDelegate.m */,
 				A9695C731990CA9100A9F64B /* Main.storyboard */,
@@ -119,6 +129,8 @@
 				A9695C771990CA9100A9F64B /* UPDViewController.m */,
 				A9695C791990CA9100A9F64B /* Images.xcassets */,
 				A9695C681990CA9100A9F64B /* Supporting Files */,
+				A9695CA51990CD4F00A9F64B /* IKAutoCompleteTextField.h */,
+				A9695CA61990CD4F00A9F64B /* IKAutoCompleteTextField.m */,
 			);
 			path = UniversalPopoverDemo;
 			sourceTree = "<group>";
@@ -150,6 +162,25 @@
 				A9695C891990CA9100A9F64B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9695C961990CCB900A9F64B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A9695C9A1990CCB900A9F64B /* WYPopoverController */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A9695C9A1990CCB900A9F64B /* WYPopoverController */ = {
+			isa = PBXGroup;
+			children = (
+				A9695C9B1990CCB900A9F64B /* WYPopoverController.h */,
+				A9695C9C1990CCB900A9F64B /* WYPopoverController.m */,
+				A9695C9D1990CCB900A9F64B /* WYStoryboardPopoverSegue.h */,
+				A9695C9E1990CCB900A9F64B /* WYStoryboardPopoverSegue.m */,
+			);
+			path = WYPopoverController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +281,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9695CA71990CD4F00A9F64B /* IKAutoCompleteTextField.m in Sources */,
 				A9695C721990CA9100A9F64B /* UPDAppDelegate.m in Sources */,
 				A9695C781990CA9100A9F64B /* UPDViewController.m in Sources */,
+				A9695CA11990CCB900A9F64B /* WYStoryboardPopoverSegue.m in Sources */,
 				A9695C6E1990CA9100A9F64B /* main.m in Sources */,
+				A9695CA01990CCB900A9F64B /* WYPopoverController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
