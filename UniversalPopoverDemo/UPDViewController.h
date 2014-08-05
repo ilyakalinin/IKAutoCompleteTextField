@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IKAutoCompleteTextField.h"
 
-@interface UPDViewController : UIViewController
+@interface UPDViewController : UIViewController <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet IKAutoCompleteTextField *textField;
 
 @end

@@ -17,7 +17,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	self.textField.dataSourceArray = @[@"kuku", @"bebe", @"meme", @"beme"];
+    self.textField.delegate = self;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +28,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - TextField delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self.textField resignFirstResponder];
+    return YES;
+    
+}
 @end
